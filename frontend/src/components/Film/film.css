@@ -1,0 +1,121 @@
+.film {
+  width: 100%;
+  height: 281px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+  background: #222;
+  margin: 0;
+  padding: 0;
+  border-radius: 6px;
+}
+
+.film__picture {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  overflow: clip;
+  width: 100%;
+  height: 203px;
+  border-radius: 6px 6px 0 0;
+  background-repeat: no-repeat;
+  border-color: transparent;
+}
+
+.film__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 16px 0 16px;
+  margin: 0;
+}
+
+.film__title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  max-width: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.film__duration {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: normal;
+  margin: 10px 0 16px 16px;
+  color: #8b8b8b;
+}
+
+.film__like-button {
+  margin-left: auto;
+  height: 30px;
+  width: 30px;
+  background: transparent url(../../images/likeinactive.svg) no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.film__like-button_active {
+  margin-left: auto;
+  height: 30px;
+  width: 30px;
+  background: transparent url(../../images/likeactive.svg) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.film__like-button:hover {
+  opacity: 0.8;
+}
+
+.film__button-delete {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent url(../../images/dislike.svg) center / 16px no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.film__button-delete:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.film:hover .film__button-delete {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .film__picture {
+    height: 190px;
+  }
+
+  .film {
+    max-height: 262px;
+  }
+
+  .film__header {
+    padding: 8px 14px 0 14px;
+  }
+
+  .film__duration {
+    margin: 7px 0 14px 14px;
+  }
+
+  .film__button-delete{
+    display: block;
+  }
+}

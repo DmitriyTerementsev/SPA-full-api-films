@@ -1,0 +1,11 @@
+export const EMAIL_REGEX = "[a-zA-Z0-9_.]+@[a-zA-Z0-9_]+\\.[a-z]{2,}";
+export const NAME_REGEX = "[A-Za-zА-Яа-яЁё\\s\\-]+";
+export const SHORTS = 40;
+export const NUMBER_MOVIES_DESK = 3;
+export const TABLET_ITEMS_DISP = 2;
+export const MOBILE_ITEMS_DISP = 2;
+export const BREAKPOINT_DESK = 1300;
+export const BREAKPOINT_TABL = 768;
+export const SIZE_ITEMSSIXTEEN = 12;
+export const SIZE_ITEMSEIGHT = 8;
+export const SIZE_ITEMSFIVE = 5;

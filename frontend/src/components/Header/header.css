@@ -1,0 +1,300 @@
+.header {
+  background-color: transparent;
+}
+
+.header_inactive {
+  display: none;
+}
+
+.header_section {
+  background-color: #073042;
+}
+
+.header__container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+
+.header__logo {
+  width: 38px;
+  height: 38px;
+  align-self: center;
+}
+
+.header__links {
+  display: flex;
+  margin: 0 0 0 45px;
+}
+
+.header__links_inactive {
+  display: none;
+}
+
+.header__link {
+  margin: 0 16px 0 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  align-self: center;
+  justify-self: center;
+  text-decoration: none;
+}
+
+.header__link:last-of-type {
+  margin: 0;
+}
+
+.header__profile {
+  display: none;
+}
+
+.header__profile_active {
+  display: flex;
+  width: 100px;
+  height: 32px;
+  margin: auto 0;
+  border-radius: 40px;
+  box-shadow: 0px 3px 14px 0px #00000014;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  background-color: transparent;
+  appearance: none;
+  border: 0;
+}
+
+.header__profile-text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: center;
+  margin-left: 11px;
+}
+
+.header__profile-icon-back {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #313131;
+  display: flex;
+  justify-content: center;
+  margin-right: 3px;
+}
+
+.header__profile-icon {
+  width: 11px;
+  height: 11px;
+  align-self: center;
+}
+
+.header__auth {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__register {
+  display: none;
+}
+
+.header__register_active {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  align-self: center;
+  justify-self: center;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.header__button {
+  display: none;
+}
+
+.header__button_active {
+  display: flex;
+  width: 76px;
+  height: 32px;
+  background-color: #3ddc84;
+  margin: auto 0;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.header__profile_active_burger {
+  margin-top: 344px;
+}
+
+.header__button-text {
+  background-color: #3ddc84;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  margin: auto;
+  text-decoration: none;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__profile_inactive {
+  display: none;
+}
+
+.burger {
+  position: fixed;
+  background-color: #202020;
+  height: 100vh;
+  width: 512px;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease all;
+}
+
+.burger_active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s ease all;
+}
+
+.burger__links {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 144px auto 0 auto;
+  align-items: center;
+  gap: 24px;
+}
+
+.burger__link {
+  text-align: center;
+  margin-top: 28px;
+  text-decoration: none;
+}
+
+.burger__link:first-of-type {
+  margin-top: 159px;
+}
+
+.burger__link:last-of-type {
+  margin-top: 321px;
+}
+
+.burger__close {
+  appearance: none;
+  border: 0;
+  background-color: #202020;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  transition: 0.5s;
+}
+
+.burger__close:hover {
+  cursor: pointer;
+  opacity: 80%;
+  transition: 0.5s;
+}
+
+.active {
+  border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__container {
+    display: flex;
+    width: 92%;
+    margin: 0 auto;
+    padding: 18px 0;
+  }
+
+  .header__burger {
+    margin-left: auto;
+    display: block;
+    appearance: none;
+    border: 0;
+    background-image: url(../../images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 43px;
+    height: 43px;
+    background-color: transparent;
+  }
+
+  .header__burger_inactive {
+    display: none;
+  }
+
+  .burger__close-icon {
+    appearance: none;
+    border: 0;
+    background-image: url(../../images/close.svg);
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+  }
+
+  .burger__close-icon:hover {
+    cursor: pointer;
+  }
+
+  .header__burger:hover {
+    cursor: pointer;
+  }
+
+  .header__auth_active {
+    display: flex;
+  }
+
+  .header__links {
+    display: none;
+  }
+
+  .header__profile{
+    display: none;
+  }
+
+  .header__profile_active_burger{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    display: flex;
+    width: 91%;
+    margin: 0 auto;
+    padding: 18px 0;
+  }
+
+  .header__register {
+    font-size: 10px;
+    margin-right: 14px;
+  }
+
+  .header__links {
+    display: none;
+  }
+
+  .header__button {
+    width: 54px;
+    height: 26px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
