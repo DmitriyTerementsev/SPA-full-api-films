@@ -29,7 +29,7 @@ git clone https://github.com/DmitriyTerementsev/SPA-full-api-films.git
 ``` bash
 cd frontend
 npm i
-npm run dev
+npm run start
 ``` 
 
 ## *back*
